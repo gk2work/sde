@@ -30,7 +30,7 @@ const quickInfo = [
 ]
 
 const strengths = [
-  { label: 'Full-Stack Engineering', desc: 'React, Next.js, Node.js, FastAPI — end to end.' },
+  { label: 'Full-Stack Engineering', desc: 'React, Next.js, Node.js, FastAPI. Frontend to backend.' },
   { label: 'AI & LLM Integration', desc: 'RAG pipelines, fine-tuned models, OCR, GPT-4o.' },
   { label: 'System Design', desc: 'Scalable APIs, RBAC, WebSockets, cloud deployments.' },
   { label: 'Product Mindset', desc: 'From architecture decisions to shipping to production.' },
@@ -83,15 +83,13 @@ export default function About() {
           <div className="about__content fade-in-right">
 
             <p className="about__lead">
-              Full-stack engineer with a passion for building things that work at scale —
-              from clean APIs to intelligent, AI-driven user experiences.
+              Full-stack engineer who builds things that work at scale. Clean APIs, solid architecture, and intelligent user experiences.
             </p>
 
             <p className="about__body">
               I transitioned from Electronics & Communication Engineering into software through
               self-driven learning and haven't looked back. I've since built LLM chatbots,
-              RAG systems, OCR pipelines, face-authentication platforms, and multi-tenant SaaS
-              products — each one shipped to real users.
+              RAG systems, OCR pipelines, face-authentication platforms, and multi-tenant SaaS products. Each one shipped to real users.
             </p>
 
             <p className="about__body">

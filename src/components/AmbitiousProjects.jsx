@@ -7,7 +7,7 @@ const ambitiousProjects = [
     title: 'Artha — Personal Wealth Aggregator',
     subtitle: 'अर्थ · Sanskrit for wealth, meaning, and purpose',
     description:
-      'A read-only personal wealth aggregation platform for Indian residents that brings stocks, mutual funds, NPS, EPF, Sukanya Samriddhi, insurance, gold, FDs, and bank holdings into a single mobile-first interface. Architecturally read-only — no money movement, no advisory.',
+      'A personal wealth aggregation platform for Indian residents that consolidates stocks, mutual funds, NPS, EPF, Sukanya Samriddhi, insurance, gold, FDs, and bank holdings in one place. Read-only by design: no money movement, no advisory.',
     highlights: [
       'Unified net worth tracking across 10+ asset classes',
       'Account Aggregator sync (RBI AA) & CAS ingestion',
@@ -24,7 +24,7 @@ const ambitiousProjects = [
     title: 'NyayaMitra — AI Legal Assistant',
     subtitle: 'न्यायमित्र · Friend of Justice',
     description:
-      'An AI legal assistant providing accurate, citation-verified, multilingual legal guidance covering Indian statutory law, judicial precedents, and procedural walkthroughs. Provides information — not legal advice.',
+      'An AI legal assistant that provides accurate, citation-backed, multilingual legal guidance across Indian statutory law, judicial precedents, and procedural walkthroughs. Strictly informational, not legal advice.',
     highlights: [
       '7 legal domains — Criminal, Property, Family, Labor, Consumer, Constitutional, IP',
       'Citation-verified answers cross-referenced against legal database',

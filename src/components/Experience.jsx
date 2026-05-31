@@ -30,8 +30,8 @@ const experiences = [
     type: 'Full-time',
     current: false,
     highlights: [
-      'Designed and implemented AI-driven platform features — owned end-to-end conversational workflow design with LLM-powered chatbots handling study-abroad queries, integrating responses with internal admissions data to reduce manual counselor intervention.',
-      'Built AI-assisted document processing workflows for structured extraction of student and academic data via OCR pipelines with backend validation, normalisation, and consistency checks for high-volume ingestion.',
+      'Designed and built AI platform features including LLM chatbots for study-abroad queries. Owned the full conversational workflow: prompt design, intent handling, and backend orchestration against internal admissions data.',
+      'Built document processing workflows using OCR pipelines to extract and validate student and academic data at scale. Handled normalisation, consistency checks, and multi-format ingestion.',
       'Implemented intelligent search and recommendation workflows inspired by RAG-based systems, enabling semantic course discovery and smarter shortlisting aligned with student profiles.',
       'Developed and maintained scalable backend services using Node.js, Express.js, and MongoDB; designed REST APIs supporting real-time queries and high-volume admissions data.',
       'Integrated role-based access control (RBAC) and secure API authentication for counselors, operations teams, and internal stakeholders.',
@@ -49,7 +49,7 @@ const experiences = [
     type: 'Training',
     current: false,
     highlights: [
-      'Built production-grade full-stack applications covering React frontends, Node.js/Express backends, and MongoDB/SQL databases.',
+      'Built full-stack applications across React frontends, Node.js/Express backends, and MongoDB/SQL databases.',
       'Developed REST APIs and authentication flows, following Git/GitHub-based collaborative workflows.',
       'Completed hands-on curriculum covering data structures, system design fundamentals, and deployment pipelines.',
     ],
@@ -66,7 +66,7 @@ export default function Experience() {
           <span className="section-tag">Career Journey</span>
           <h2 className="section-title">Work <span className="accent">Experience</span></h2>
           <p className="section-subtitle">
-            Building production-grade software in fast-moving, AI-first environments.
+            Building software in fast-moving product teams, from backend services to AI features.
           </p>
         </div>
 

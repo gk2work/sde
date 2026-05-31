@@ -48,7 +48,7 @@ export default function Skills() {
           <span className="section-tag">What I Work With</span>
           <h2 className="section-title">Skills &amp; <span className="accent">Technologies</span></h2>
           <p className="section-subtitle">
-            A curated stack of languages, frameworks, and tools I use to build production-grade software.
+            Languages, frameworks, and tools I work with across the full stack.
           </p>
         </div>
 
