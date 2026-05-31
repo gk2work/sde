@@ -1,0 +1,194 @@
+/* ===========================
+   AMBITIOUS PROJECTS — Editorial numbered
+   =========================== */
+
+.ambitious__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ambitious__card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base);
+}
+
+.ambitious__card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* ── Number bar ── */
+.ambitious__bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.ambitious__num {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.ambitious__bar-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border-light);
+}
+
+.ambitious__gh-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--border-medium);
+  border-bottom-width: 2px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.ambitious__gh-link:hover {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+  background: var(--bg-white);
+}
+
+/* ── Title block ── */
+.ambitious__head {
+  margin-bottom: 1.5rem;
+}
+
+.ambitious__title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+  margin: 0 0 0.3rem;
+  line-height: 1.2;
+}
+
+.ambitious__subtitle {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── Body: main content + stack sidebar ── */
+.ambitious__body {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.ambitious__desc {
+  font-size: 0.93rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin: 0 0 1.25rem;
+}
+
+/* Highlights list */
+.ambitious__highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ambitious__highlight {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-size: 0.87rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.ambitious__check {
+  color: #22c55e;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-size: 0.8rem;
+}
+
+/* ── Stack sidebar ── */
+.ambitious__stack-box {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.1rem;
+  height: fit-content;
+}
+
+.ambitious__stack-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.65rem;
+}
+
+.ambitious__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.ambitious__chip {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xs);
+  padding: 0.25rem 0.55rem;
+  line-height: 1;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .ambitious__body {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ambitious__card {
+    padding: 1.5rem;
+  }
+
+  .ambitious__title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ambitious__bar {
+    flex-wrap: wrap;
+  }
+
+  .ambitious__bar-line {
+    display: none;
+  }
+}

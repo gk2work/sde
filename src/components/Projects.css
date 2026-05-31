@@ -1,0 +1,170 @@
+/* ===========================
+   PROJECTS — Editorial numbered list
+   =========================== */
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-white);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Each project row */
+.projects__item {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border-light);
+  transition: background var(--transition-fast);
+}
+
+.projects__item:last-child {
+  border-bottom: none;
+}
+
+.projects__item:hover {
+  background: var(--bg-hover);
+}
+
+/* ── Number bar ── */
+.projects__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.projects__num {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.projects__category {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  padding: 0.2rem 0.55rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xs);
+}
+
+.projects__bar-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border-light);
+}
+
+.projects__links {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.projects__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid var(--border-medium);
+  border-bottom-width: 2px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  transition: all var(--transition-fast);
+}
+
+.projects__link:hover {
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+  background: var(--bg-white);
+}
+
+/* ── Content ── */
+.projects__body {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.projects__title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+}
+
+.projects__desc {
+  font-size: 0.875rem;
+  line-height: 1.72;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* ── Tech tags ── */
+.projects__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-content: start;
+  padding-top: 0.2rem;
+}
+
+.projects__chip {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xs);
+  padding: 0.22rem 0.52rem;
+  line-height: 1;
+}
+
+/* ── CTA ── */
+.projects__cta {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-light);
+  margin-top: 2rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .projects__item {
+    padding: 1.25rem 1.25rem;
+  }
+
+  .projects__body {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .projects__bar {
+    flex-wrap: wrap;
+  }
+
+  .projects__bar-line {
+    display: none;
+  }
+}

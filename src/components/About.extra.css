@@ -1,0 +1,4 @@
+/* About section background alternation */
+.about {
+  background: var(--bg-secondary);
+}

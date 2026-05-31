@@ -1,0 +1,85 @@
+/* ===========================
+   SKILLS — Row table layout
+   =========================== */
+
+.skills__table {
+  max-width: 860px;
+  margin: 0 auto;
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.skills__row {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+  transition: background var(--transition-fast);
+}
+
+.skills__row:last-child {
+  border-bottom: none;
+}
+
+.skills__row:hover {
+  background: var(--bg-hover);
+}
+
+/* Category label */
+.skills__row-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--text-muted);
+  padding-top: 0.35rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--accent-primary);
+  line-height: 1.3;
+}
+
+/* Chips */
+.skills__row-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.45rem;
+  padding-top: 0.15rem;
+}
+
+.skills__chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  line-height: 1;
+}
+
+.skills__chip:hover {
+  color: var(--accent-primary);
+  background: rgba(177, 6, 18, 0.04);
+  border-color: rgba(177, 6, 18, 0.2);
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .skills__row {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .skills__row-label {
+    padding-top: 0;
+  }
+}

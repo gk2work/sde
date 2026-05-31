@@ -1,0 +1,371 @@
+/* ===========================
+   DESIGN SYSTEM — AMBITIO INSPIRED
+   Light, clean, typographic with crimson red accent
+   =========================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ---- Ambitio Color Palette ---- */
+  --bg-primary: #FAFAFA;
+  --bg-secondary: #F3F3F3;
+  --bg-white: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-hover: #F8F8F8;
+  --bg-tag: #F3F3F3;
+
+  /* Ambitio Reds */
+  --accent-primary: #B10612;
+  --accent-deep: #8A0007;
+  --accent-light: #D4000F;
+  --accent-gradient: linear-gradient(135deg, #B10612, #8A0007);
+  --accent-gradient-text: linear-gradient(to right, #B10612, #8A0007, #B10612);
+
+  /* Text */
+  --text-primary: #212121;
+  --text-secondary: #696969;
+  --text-muted: #A0A0A0;
+  --text-warm: #945B4D;
+  --text-accent: #B10612;
+
+  /* Borders */
+  --border-light: #EAEAEA;
+  --border-medium: #E0E0E0;
+  --border-dark: #212121;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+  --shadow-card: 0px 1px 2px 0px rgba(43,48,59,0.04), 0px 2px 4px 0px rgba(43,48,59,0.04), 0px 4px 8px -2px rgba(43,48,59,0.06), 0px 0px 0px 1px rgba(43,48,59,0.04);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Border Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Z-index */
+  --z-navbar: 100;
+
+  color-scheme: light;
+}
+
+/* ===========================
+   GLOBAL RESETS & BASE
+   =========================== */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  position: relative;
+}
+
+/* ===========================
+   TYPOGRAPHY
+   =========================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+/* Ambitio-style section pill tag */
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-white));
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-full);
+  padding: 0.35rem 1rem;
+  margin-bottom: var(--space-4);
+  letter-spacing: 0.01em;
+}
+
+/* Ambitio heading style: italic serif gradient for accent words */
+.section-title {
+  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: var(--space-3);
+  letter-spacing: -0.02em;
+}
+
+.section-title .accent {
+  font-style: italic;
+  font-weight: 700;
+  background: var(--accent-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-right: 4px;
+}
+
+
+
+
+/* ===========================
+   LAYOUT
+   =========================== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-8);
+}
+
+.section {
+  padding: var(--space-24) 0;
+  position: relative;
+}
+
+.section-header {
+  margin-bottom: var(--space-12);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 560px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* ===========================
+   CARDS
+   =========================== */
+
+.card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base), transform var(--transition-base), border-color var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-medium);
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   BUTTONS — Ambitio style
+   =========================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+  border: none;
+  line-height: 1;
+}
+
+/* Ambitio primary CTA: white pill with thick bottom border */
+.btn-primary {
+  background: linear-gradient(to bottom, var(--bg-white), rgba(255,255,255,0.85));
+  color: var(--text-primary);
+  border: 1px solid var(--border-dark);
+  border-bottom-width: 2px;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background: var(--bg-white);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+/* Filled red button */
+.btn-red {
+  background: var(--accent-gradient);
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(177, 6, 18, 0.25);
+}
+
+.btn-red:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(177, 6, 18, 0.35);
+}
+
+/* Outline ghost */
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-medium);
+  border-bottom-width: 2px;
+}
+
+.btn-outline:hover {
+  border-color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+/* ===========================
+   BADGES / TAGS
+   =========================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+  background: var(--bg-tag);
+  border: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  letter-spacing: 0.03em;
+}
+
+.badge-red {
+  background: rgba(177, 6, 18, 0.06);
+  border-color: rgba(177, 6, 18, 0.15);
+  color: var(--accent-primary);
+}
+
+/* ===========================
+   DIVIDERS
+   =========================== */
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-light), transparent);
+  margin: 0;
+}
+
+/* ===========================
+   SCROLL ANIMATIONS
+   =========================== */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in, .fade-in-left, .fade-in-right {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ===========================
+   SCROLLBAR
+   =========================== */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: #D0D0D0;
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B0B0B0;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-4);
+  }
+  .section {
+    padding: var(--space-16) 0;
+  }
+}
