@@ -1,7 +1,7 @@
 import './Hero.css'
 
 const stats = [
-  { value: '1+', label: 'Years Experience' },
+  { value: '3+', label: 'Years Experience' },
   { value: '10+', label: 'Projects Shipped' },
   { value: '5+', label: 'Tech Stacks' },
   { value: '2', label: 'AI Certifications' },
