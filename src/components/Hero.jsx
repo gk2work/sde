@@ -81,7 +81,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="/resume.pdf"
+            href="/GK-SDE.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hero__cta-secondary"
