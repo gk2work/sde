@@ -64,7 +64,7 @@ const projects = [
   {
     id: 'job-agent',
     num: '07',
-    title: 'VeriJob — Auto-Apply Agent',
+    title: 'VeriJob · Auto-Apply Agent',
     description: 'End-to-end job-search agent that scrapes live listings from Naukri, Indeed, Glassdoor, and other job portals, then auto-applies with tailored GPT-generated cover letters and tracks application status.',
     tags: ['Node.js', 'Playwright', 'OpenAI', 'React', 'SQLite'],
     category: 'Automation Agent',

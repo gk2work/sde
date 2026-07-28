@@ -4,7 +4,7 @@ const ambitiousProjects = [
   {
     id: 'artha',
     num: '01',
-    title: 'Artha — Personal Wealth Aggregator',
+    title: 'Artha · Personal Wealth Aggregator',
     subtitle: 'अर्थ · Sanskrit for wealth, meaning, and purpose',
     description:
       'A personal wealth aggregation platform for Indian residents that consolidates stocks, mutual funds, NPS, EPF, Sukanya Samriddhi, insurance, gold, FDs, and bank holdings in one place. Read-only by design: no money movement, no advisory.',
@@ -21,7 +21,7 @@ const ambitiousProjects = [
   {
     id: 'nyayamitra',
     num: '02',
-    title: 'NyayaMitra — AI Legal Assistant',
+    title: 'NyayaMitra · AI Legal Assistant',
     subtitle: 'न्यायमित्र · Friend of Justice',
     description:
       'An AI legal assistant that provides accurate, citation-backed, multilingual legal guidance across Indian statutory law, judicial precedents, and procedural walkthroughs. Strictly informational, not legal advice.',

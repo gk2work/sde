@@ -248,7 +248,7 @@ export default function Contact() {
 
             {status === "success" && (
               <p className="contact__feedback contact__feedback--success">
-                Message sent — I'll get back to you soon.
+                Message sent. I'll get back to you soon.
               </p>
             )}
             {status === "error" && (

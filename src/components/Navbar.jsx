@@ -4,9 +4,10 @@ import './Navbar.css'
 const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
-  { href: '#projects', label: 'Projects' },
+  { href: '#ambitious-projects', label: 'Projects' },
   { href: '#experience', label: 'Experience' },
   { href: '#education', label: 'Education' },
+  { href: '#certifications', label: 'Certifications' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -48,17 +49,6 @@ export default function Navbar() {
         <a href="#hero" className="navbar__logo">
           <span className="navbar__logo-mark">GK</span>
         </a>
-
-        <button
-          className={`navbar__hamburger ${menuOpen ? 'open' : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation menu"
-          aria-expanded={menuOpen}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
 
         <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`} role="list">
           {navLinks.map((link) => (
