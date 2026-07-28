@@ -1,23 +1,34 @@
 import './Certifications.css'
+import hfLogo from '../assets/huggingface-logo.svg'
+import iitgLogo from '../assets/iitg-logo.png'
 
 const certs = [
   {
     id: 'mcp',
-    name: 'Fundamentals of MCP',
+    title: 'Fundamentals of MCP',
     issuer: 'Hugging Face',
-    icon: '🤗',
+    subtitle: 'Model Context Protocol',
+    tag: 'AI Certification',
+    logo: hfLogo,
+    alt: 'Hugging Face',
   },
   {
     id: 'agents',
-    name: 'Agents Fundamentals',
+    title: 'Agents Fundamentals',
     issuer: 'Hugging Face',
-    icon: '🤗',
+    subtitle: 'Autonomous AI Agents',
+    tag: 'AI Certification',
+    logo: hfLogo,
+    alt: 'Hugging Face',
   },
   {
     id: 'ml-fdp',
-    name: 'Joint Faculty Development Programme on Classical ML',
-    issuer: 'Electronics & ICT Academy, IIT Guwahati (supported by MeitY, Govt. of India) · May 2026',
-    icon: '🎓',
+    title: 'Joint Faculty Development Programme on Classical ML',
+    issuer: 'Electronics & ICT Academy, IIT Guwahati',
+    subtitle: 'Supported by MeitY, Govt. of India',
+    tag: 'May 2026',
+    logo: iitgLogo,
+    alt: 'IIT Guwahati',
   },
 ]
 
@@ -29,21 +40,31 @@ export default function Certifications() {
           <span className="section-tag">Continuous Learning</span>
           <h2 className="section-title"><span className="accent">Certifications</span></h2>
           <p className="section-subtitle">
-            Professional certifications to stay at the cutting edge of AI and hardware technologies.
+            Professional certifications and accredited programmes in AI and Machine Learning.
           </p>
         </div>
 
-        <div className="certs__grid">
+        <div className="certs__grid fade-in">
           {certs.map((cert, index) => (
             <div
               key={cert.id}
-              className="card certs__card fade-in"
+              className="certs__card"
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
-              <div className="certs__card-icon" aria-hidden="true">{cert.icon}</div>
-              <div className="certs__card-content">
-                <h3 className="certs__name">{cert.name}</h3>
-                <p className="certs__issuer">{cert.issuer}</p>
+              <div className="certs__card-top">
+                <div className="certs__logo-badge">
+                  <img src={cert.logo} alt={cert.alt} className="certs__logo-img" />
+                </div>
+                <span className="certs__tag">{cert.tag}</span>
+              </div>
+
+              <div className="certs__card-body">
+                <h3 className="certs__title">{cert.title}</h3>
+              </div>
+
+              <div className="certs__card-footer">
+                <p className="certs__issuer-name">{cert.issuer}</p>
+                {cert.subtitle && <p className="certs__issuer-sub">{cert.subtitle}</p>}
               </div>
             </div>
           ))}

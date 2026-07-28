@@ -1,10 +1,14 @@
 import './Experience.css'
+import viaCertaLogo from '../assets/viacerta-logo.png'
+import foreignAdmitsLogo from '../assets/foreignadmits-logo.jpg'
+import uentreeLogo from '../assets/uentree-logo.jpg'
 
 const experiences = [
   {
     id: 'viacerta',
     num: '01',
     company: 'ViaCerta',
+    logo: viaCertaLogo,
     role: 'Full Stack Developer',
     period: 'April 2026 – Present',
     location: 'Remote',
@@ -22,6 +26,7 @@ const experiences = [
     id: 'foreignadmits',
     num: '02',
     company: 'ForeignAdmits',
+    logo: foreignAdmitsLogo,
     role: 'Software Development Engineer (SDE-1), Full Stack & AI Platform',
     period: 'Feb 2025 – Feb 2026',
     location: 'Bengaluru, India',
@@ -45,6 +50,7 @@ const experiences = [
     id: 'uentree',
     num: '03',
     company: 'UEntrée',
+    logo: uentreeLogo,
     role: 'Software Development Engineer (SDE-1)',
     period: 'Jun 2023 – Jan 2025',
     location: 'Bengaluru, India',
@@ -91,16 +97,23 @@ export default function Experience() {
 
               {/* Header */}
               <div className="exp__head">
-                <h3 className="exp__company">{exp.company}</h3>
-                <p className="exp__role">{exp.role}</p>
-                {exp.location && (
-                  <span className="exp__location">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="11" height="11" aria-hidden="true">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
-                    </svg>
-                    {exp.location}
-                  </span>
-                )}
+                <div className="exp__company-row">
+                  <div className="exp__logo-badge">
+                    <img src={exp.logo} alt={exp.company} className="exp__company-logo" />
+                  </div>
+                  <div className="exp__company-info">
+                    <h3 className="exp__company">{exp.company}</h3>
+                    <p className="exp__role">{exp.role}</p>
+                    {exp.location && (
+                      <span className="exp__location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="11" height="11" aria-hidden="true">
+                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        {exp.location}
+                      </span>
+                    )}
+                  </div>
+                </div>
               </div>
 
               {/* Body: highlights + stack */}
