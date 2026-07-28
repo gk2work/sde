@@ -14,10 +14,10 @@ const certs = [
     icon: '🤗',
   },
   {
-    id: 'vlsi',
-    name: 'VLSI Certification',
-    issuer: 'National Institute of Electronics & IT, Calicut',
-    icon: '📜',
+    id: 'ml-fdp',
+    name: 'Joint Faculty Development Programme on Classical ML',
+    issuer: 'Electronics & ICT Academy, IIT Guwahati (supported by MeitY, Govt. of India) · May 2026',
+    icon: '🎓',
   },
 ]
 

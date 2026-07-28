@@ -7,35 +7,40 @@ const skillGroups = [
   },
   {
     category: 'Frontend',
-    skills: ['React.js', 'Next.js 14', 'Angular 17', 'Tailwind CSS', 'shadcn/ui', 'Material-UI', 'Vite'],
+    skills: ['React.js', 'Angular', 'HTML', 'CSS'],
+  },
+  {
+    category: 'AI / LLM',
+    skills: [
+      'LLM App Development',
+      'Prompt Engineering',
+      'RAG & Semantic Search',
+      'OCR / Document Extraction',
+      'MCP & Agent Fundamentals',
+    ],
   },
   {
     category: 'Backend',
-    skills: ['Node.js', 'Express.js', 'NestJS', 'FastAPI', 'Flask', 'REST APIs', 'WebSockets', 'GraphQL'],
+    skills: [
+      'Node.js',
+      'Express.js',
+      'FastAPI',
+      'REST APIs',
+      'WebSockets',
+      'Authentication & RBAC',
+    ],
   },
   {
-    category: 'Databases & Stores',
-    skills: ['MongoDB', 'PostgreSQL', 'Redis', 'SQLite', 'Qdrant', 'FAISS', 'Elasticsearch', 'Neo4j'],
-  },
-  {
-    category: 'AI / ML',
-    skills: ['OpenAI GPT-4o', 'Llama 3.1 + LoRA', 'vLLM', 'RAG Pipelines', 'Sentence-Transformers', 'FaceNet', 'OCR Pipelines', 'DeepSeek-Coder'],
+    category: 'Data',
+    skills: ['MongoDB', 'SQL', 'Schema Design', 'Query Optimization'],
   },
   {
     category: 'Cloud & DevOps',
-    skills: ['AWS (ECS, S3)', 'Docker', 'Kubernetes', 'CI/CD', 'Vercel'],
+    skills: ['AWS (ECS, S3)', 'Docker', 'CI/CD', 'Git', 'GitHub'],
   },
   {
-    category: 'Auth & Security',
-    skills: ['RBAC', 'JWT', 'NextAuth', 'bcrypt', 'AES-256', 'OAuth (Google)'],
-  },
-  {
-    category: 'Automation',
-    skills: ['Playwright', 'Telegram Bot API', 'APScheduler'],
-  },
-  {
-    category: 'Integrations & Tools',
-    skills: ['Twilio', 'Stripe', 'Cloudinary', 'Octokit', 'Git', 'GitHub', 'Jira', 'Postman'],
+    category: 'Tools & Practices',
+    skills: ['Postman', 'Jira', 'Agile/Scrum', 'Code Review', 'Data Structures'],
   },
 ]
 

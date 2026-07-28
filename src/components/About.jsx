@@ -6,7 +6,7 @@ const quickInfo = [
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="15" height="15"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
     ),
-    text: 'Bengaluru, Karnataka',
+    text: 'Bengaluru, India',
   },
   {
     icon: (
@@ -24,16 +24,16 @@ const quickInfo = [
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="15" height="15"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
     ),
-    text: 'gkt2work@gmail.com',
-    href: 'mailto:gkt2work@gmail.com',
+    text: 'gautam.aec18@gmail.com',
+    href: 'mailto:gautam.aec18@gmail.com',
   },
 ]
 
 const strengths = [
-  { label: 'Full-Stack Engineering', desc: 'React, Next.js, Node.js, FastAPI. Frontend to backend.' },
-  { label: 'AI & LLM Integration', desc: 'RAG pipelines, fine-tuned models, OCR, GPT-4o.' },
-  { label: 'System Design', desc: 'Scalable APIs, RBAC, WebSockets, cloud deployments.' },
-  { label: 'Product Mindset', desc: 'From architecture decisions to shipping to production.' },
+  { label: 'Full-Stack Development', desc: 'React, Angular, Node.js, Python, MongoDB, RESTful APIs.' },
+  { label: 'AI & OCR Integration', desc: 'LLM app development, prompt engineering, RAG, document extraction pipelines, MCP.' },
+  { label: 'Backend & Data Systems', desc: 'Scalable RESTful services, schema design, query optimization, RBAC security.' },
+  { label: 'Product Architecture', desc: 'Architecting products from scratch to low-latency production deployments in agile teams.' },
 ]
 
 export default function About() {
@@ -63,7 +63,7 @@ export default function About() {
 
             <div className="about__sidebar-info">
               <h3 className="about__sidebar-name">Gautam Kumar</h3>
-              <p className="about__sidebar-role">Software Engineer & AI Builder</p>
+              <p className="about__sidebar-role">Full Stack Developer & SDE-1</p>
             </div>
 
             <ul className="about__quick-list">
@@ -83,24 +83,20 @@ export default function About() {
           <div className="about__content fade-in-right">
 
             <p className="about__lead">
-              Full-stack engineer who builds things that work at scale. Clean APIs, solid architecture, and intelligent user experiences.
+              Full Stack Developer with extensive experience building scalable web applications, RESTful APIs, and LLM-powered features.
             </p>
 
             <p className="about__body">
-              I transitioned from Electronics & Communication Engineering into software through
-              self-driven learning and haven't looked back. I've since built LLM chatbots,
-              RAG systems, OCR pipelines, face-authentication platforms, and multi-tenant SaaS products. Each one shipped to real users.
+              Skilled across the full stack with React, Angular, Node.js, Python, and MongoDB. Proven track record of architecting digital products from scratch, integrating AI and OCR pipelines, and deploying reliable, low-latency backend services in agile environments.
             </p>
 
             <p className="about__body">
-              I care deeply about code quality, product impact, and developer experience.
-              Whether it's architecting a new system or optimising a slow query,
-              I bring the same attention to detail to every layer of the stack.
+              From building semantic search and study-abroad platforms at ForeignAdmits to architecting server-side tech infrastructure for product launches at ViaCerta, I focus on clean code, robust system design, and high-impact digital solutions.
             </p>
 
             {/* What I bring */}
             <div className="about__strengths">
-              <h4 className="about__strengths-title">What I bring to the table</h4>
+              <h4 className="about__strengths-title">Core Competencies</h4>
               <div className="about__strengths-grid">
                 {strengths.map((s) => (
                   <div key={s.label} className="about__strength-item">

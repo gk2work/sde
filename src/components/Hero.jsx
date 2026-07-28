@@ -4,7 +4,7 @@ const stats = [
   { value: "3+", label: "Years Experience" },
   { value: "10+", label: "Projects Shipped" },
   { value: "5+", label: "Tech Stacks" },
-  { value: "2", label: "AI Certifications" },
+  { value: "3", label: "Certifications" },
 ];
 
 export default function Hero() {
@@ -23,11 +23,11 @@ export default function Hero() {
         </h1>
 
         <div className="hero__role-strip fade-in">
-          <span>Software Engineer</span>
+          <span>Full Stack Developer</span>
           <span className="hero__role-dot" aria-hidden="true">
             ·
           </span>
-          <span>Full-Stack Developer</span>
+          <span>Software Engineer (SDE-1)</span>
           <span className="hero__role-dot" aria-hidden="true">
             ·
           </span>
@@ -35,8 +35,8 @@ export default function Hero() {
         </div>
 
         <p className="hero__bio fade-in">
-          Building web apps and AI platforms from system design to deployment.
-          Fast, scalable, and shipped.
+          Full Stack Developer building scalable web applications, RESTful APIs,
+          and LLM-powered features. Skilled across React, Angular, Node.js, Python, and MongoDB.
         </p>
 
         <div className="hero__meta fade-in">
@@ -58,7 +58,7 @@ export default function Hero() {
           <span className="hero__meta-sep" aria-hidden="true">
             ·
           </span>
-          <span className="hero__meta-item">SDE @ ViaCerta</span>
+          <span className="hero__meta-item">Full Stack Dev @ ViaCerta</span>
         </div>
 
         <div className="hero__actions fade-in">
@@ -81,7 +81,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="/GK-SDE.pdf"
+            href="/GautamKumar_FullStackDeveloper.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hero__cta-secondary"
@@ -109,24 +109,7 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com/in/gkt2work"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hero__social-link"
-            aria-label="LinkedIn"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="18"
-              height="18"
-              aria-hidden="true"
-            >
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </a>
-          <a
-            href="mailto:gkt2work@gmail.com"
+            href="mailto:gautam.aec18@gmail.com"
             className="hero__social-link"
             aria-label="Email"
           >

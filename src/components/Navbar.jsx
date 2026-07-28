@@ -76,7 +76,7 @@ export default function Navbar() {
 
         <div className="navbar__right">
           <a
-            href="/GK-SDE.pdf"
+            href="/GautamKumar_FullStackDeveloper.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary navbar__resume-btn"

@@ -5,8 +5,8 @@ import "./Contact.css";
 const contactLinks = [
   {
     name: "Email",
-    value: "gkt2work@gmail.com",
-    href: "mailto:gkt2work@gmail.com",
+    value: "gautam.aec18@gmail.com",
+    href: "mailto:gautam.aec18@gmail.com",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -23,18 +23,20 @@ const contactLinks = [
     ),
   },
   {
-    name: "LinkedIn",
-    value: "linkedin.com/in/gkt2work",
-    href: "https://linkedin.com/in/gkt2work",
+    name: "Phone",
+    value: "+91 9631636391",
+    href: "tel:+919631636391",
     icon: (
       <svg
         viewBox="0 0 24 24"
-        fill="currentColor"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
         width="16"
         height="16"
         aria-hidden="true"
       >
-        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
       </svg>
     ),
   },
@@ -251,7 +253,7 @@ export default function Contact() {
             )}
             {status === "error" && (
               <p className="contact__feedback contact__feedback--error">
-                Something went wrong. Email me directly at gkt2work@gmail.com
+                Something went wrong. Email me directly at gautam.aec18@gmail.com
               </p>
             )}
           </form>
