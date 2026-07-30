@@ -17,17 +17,17 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 60% at 60% 20%, rgba(177, 6, 18, 0.04) 0%, transparent 65%),
-    radial-gradient(ellipse 50% 50% at 20% 80%, rgba(177, 6, 18, 0.03) 0%, transparent 60%);
+    radial-gradient(ellipse 70% 60% at 60% 20%, rgba(225, 29, 72, 0.15) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 50% at 20% 80%, rgba(147, 51, 234, 0.1) 0%, transparent 60%);
   pointer-events: none;
 }
 
 .hero__grid {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, #C8C8C8 1px, transparent 1px);
-  background-size: 30px 30px;
-  opacity: 0.35;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.5;
   pointer-events: none;
   mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 30%, transparent 100%);
 }
@@ -52,14 +52,15 @@
   align-items: center;
   gap: var(--space-2);
   padding: 0.45rem 1rem 0.45rem 0.75rem;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.5));
-  border: 1px solid rgba(255,255,255,0.9);
+  background: var(--glass-bg-subtle);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-full);
   font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-primary);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  backdrop-filter: var(--glass-blur-sm);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+  box-shadow: var(--glass-shadow);
   margin-bottom: 2rem;
 }
 
@@ -201,16 +202,20 @@
   gap: var(--space-2);
   padding: 0.8rem 1.6rem;
   border-radius: var(--radius-md);
-  border: 1px solid var(--border-medium);
-  border-bottom-width: 2px;
-  background: var(--bg-white);
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur-sm);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+  box-shadow: var(--glass-shadow);
   transition: all var(--transition-base);
 }
 
 .hero__cta-secondary:hover {
   color: var(--text-primary);
-  border-color: var(--text-primary);
+  border-color: var(--glass-border-accent);
+  background: var(--glass-bg-hover);
   transform: translateY(-1px);
+  box-shadow: var(--glass-shadow-hover);
 }
 
 /* ── Social icons ── */
@@ -228,20 +233,22 @@
   width: 40px;
   height: 40px;
   border-radius: var(--radius-sm);
-  background: var(--bg-white);
-  border: 1px solid var(--border-light);
-  border-bottom-width: 2px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur-sm);
+  -webkit-backdrop-filter: var(--glass-blur-sm);
+  border: 1px solid var(--glass-border);
   color: var(--text-secondary);
   text-decoration: none;
   transition: all var(--transition-base);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--glass-shadow);
 }
 
 .hero__social-link:hover {
   color: var(--accent-primary);
-  border-color: rgba(177, 6, 18, 0.3);
+  border-color: var(--glass-border-accent);
+  background: var(--glass-bg-hover);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--glass-shadow-hover);
 }
 
 /* ── Stats strip ── */
@@ -250,10 +257,12 @@
   justify-content: center;
   gap: 0;
   width: 100%;
-  border: 1px solid var(--border-light);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-md);
-  background: var(--bg-white);
-  box-shadow: var(--shadow-sm);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  box-shadow: var(--glass-shadow);
   overflow: hidden;
 }
 

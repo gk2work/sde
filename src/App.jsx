@@ -1,5 +1,6 @@
 import './index.css'
 import { useEffect } from 'react'
+import { useSpotlight } from './hooks/useSpotlight'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -13,6 +14,8 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
+  useSpotlight()
+
   // Scroll-driven fade-in animations
   useEffect(() => {
     const observer = new IntersectionObserver(
