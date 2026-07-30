@@ -4,7 +4,7 @@ export function useTheme() {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('theme')
     if (saved) return saved
-    return 'dark' // Default to dark glass aesthetic
+    return 'light' // Default to light theme as requested
   })
 
   useEffect(() => {
